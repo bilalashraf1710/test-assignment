@@ -1,0 +1,20 @@
+@import "../../colors.scss";
+.sideBarContainer {
+  // position: fixed;
+  // padding-left: 30px;
+  height: 100vh;
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .menuContainer {
+    margin-top: 100px;
+    .menuItemContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../colors.scss";
+.contentContainer {
+  padding-top: 40px;
+  width: 98%;
+  height: auto;
+  .mainHeading {
+    font-weight: 400;
+
+    font-family: roboto;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .subtitle {
+    font-family: roboto;
+    color: $subheading;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 10px;
+  }
+  .inputDiv {
+    display: flex;
+    :nth-child(2) {
+      display: flex;
+      align-items: center;
+    }
+    .input {
+      .textBox {
+        height: 40px;
+        width: 300px;
+        left: 0px;
+        top: 24px;
+        border-radius: 4px;
+        padding-left: 20px;
+        border: 1px solid $buttonColor;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          border: 2px solid $buttonColor !important;
+        }
+      }
+    }
+    .submit {
+      margin-left: 22px;
+      border: 1px solid #999;
+      height: 44px;
+      width: 149px;
+      left: 0px;
+      top: 0px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      font-family: Inter, sans-serif;
+      color: $mainHeading;
+      cursor: pointer;
+      &:hover {
+        border: 2px solid #999;
+      }
+    }
+  }
+  .listContainer {
+    margin-top: 40px;
+  }
+}

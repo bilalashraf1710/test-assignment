@@ -1,0 +1,20 @@
+@import "../colors.scss";
+.mainPageContainer {
+  display: flex;
+  // height: 1%;
+  .sideBar {
+    background-color: $sideBarBackground;
+    width: 5%;
+    height: auto;
+  }
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .mainContent {
+      padding-left: 50px;
+      background-color: $contentBackground;
+      // height: auto;
+    }
+  }
+}
