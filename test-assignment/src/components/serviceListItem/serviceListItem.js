@@ -32,9 +32,11 @@ function ServiceListItem({ item }) {
               setTimeout(() => setIsCopied(false), 500);
             }}
           >
-            <CopyToClipboard text={item.promoCode}>
-              <img src={Icon} title="copy to clipboard" />
-            </CopyToClipboard>
+            <div style={{ cursor: "pointer" }}>
+              <CopyToClipboard text={item.promoCode}>
+                <img src={Icon} title="copy to clipboard" />
+              </CopyToClipboard>
+            </div>
           </div>
         </div>
       </div>

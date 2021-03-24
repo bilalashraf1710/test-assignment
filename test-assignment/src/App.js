@@ -1,4 +1,4 @@
-import Home from "./container/homePageContainer/homePage";
+import Home from "./container/homePage/homePage";
 
 function App() {
   return (
