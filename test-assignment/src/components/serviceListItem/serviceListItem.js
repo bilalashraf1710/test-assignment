@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Icon from "../../assets/copyIcon.svg";
 import classes from "./serviceListItem.module.scss";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-function ServiceListItem({ item }) {
-  const [isActivated, setIsActivated] = useState(false);
+function ServiceListItem({ item, activateHandler }) {
+  // const [isActivated, setIsActivated] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+
   return (
     <div className={classes["listItemContainer"]}>
       <div style={{ width: "40%", marginLeft: 20 }}>
@@ -41,17 +42,17 @@ function ServiceListItem({ item }) {
       </div>
       <div className={classes["buttonDiv"]} style={{ width: "30%" }}>
         <div style={{ fontSize: 12, color: "white" }}>{"s"}</div>
-        {isActivated ? (
+        {!item.isActivated ? (
           <div
             className={classes["buttonRed"]}
-            onClick={() => setIsActivated(false)}
+            onClick={() => activateHandler(item.id)}
           >
             Activated
           </div>
         ) : (
           <div
             className={classes["buttonBlue"]}
-            onClick={() => setIsActivated(true)}
+            onClick={() => activateHandler(item.id)}
           >
             Activate Bonus
           </div>

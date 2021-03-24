@@ -6,18 +6,6 @@ import axios from "axios";
 import ServiceList from "../../components/serviceList/ServicesList";
 import { listServices } from "../../services/siteServices.service";
 function MainPage() {
-  const [servicesData, setServicesData] = useState([]);
-
-  useEffect(() => {
-    getServices();
-  }, []);
-
-  // returns data from api
-  const getServices = async () => {
-    let sites = await listServices();
-    setServicesData([...sites]);
-  };
-
   return (
     <div className={classes["mainPageContainer"]}>
       <div className={classes["sideBar"]}>
@@ -29,7 +17,7 @@ function MainPage() {
         </div>
 
         <div className={classes["mainContent"]}>
-          <ServiceList data={servicesData} />
+          <ServiceList />
         </div>
       </div>
     </div>
