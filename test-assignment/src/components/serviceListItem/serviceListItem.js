@@ -45,7 +45,7 @@ function ServiceListItem({ item }) {
             className={classes["buttonRed"]}
             onClick={() => setIsActivated(false)}
           >
-            Deactivate Bonus{" "}
+            Activated{" "}
           </div>
         ) : (
           <div

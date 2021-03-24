@@ -4,7 +4,7 @@ import Sidebar from "../components/sidebar/sidebar";
 import Header from "../components/header/header";
 import axios from "axios";
 import ServiceList from "../components/serviceList/ServicesList";
-import { mockURL } from "../constants";
+import { MOCKURL } from "../constants";
 function MainPage() {
   const [servicesData, setServicesData] = useState([]);
 
@@ -13,7 +13,7 @@ function MainPage() {
   }, []);
 
   const getData = async () => {
-    let sites = await axios.get(mockURL);
+    let sites = await axios.get(MOCKURL);
     console.log(sites.data);
     console.log(sites.data.length);
     setServicesData([...sites.data]);
