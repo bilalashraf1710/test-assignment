@@ -4,19 +4,19 @@ import Sidebar from "../../components/sidebar/sidebar";
 import Header from "../../components/header/header";
 import axios from "axios";
 import ServiceList from "../../components/serviceList/ServicesList";
-import { MOCKURL } from "../../constants";
+import { listServices } from "../../services/siteServices.service";
 function MainPage() {
   const [servicesData, setServicesData] = useState([]);
 
   useEffect(async () => {
-    await getData();
+    await getServices();
   }, []);
 
-  const getData = async () => {
-    let sites = await axios.get(MOCKURL);
-    console.log(sites.data);
-    console.log(sites.data.length);
-    setServicesData([...sites.data]);
+  const getServices = async () => {
+    let sites = await listServices();
+    console.log(sites);
+    console.log(sites);
+    setServicesData([...sites]);
   };
   return (
     <div className={classes["mainPageContainer"]}>

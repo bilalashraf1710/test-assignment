@@ -1,12 +1,11 @@
 @import "../../colors.scss";
 .sideBarContainer {
-  // position: fixed;
-  // padding-left: 30px;
   height: 100vh;
   .logoContainer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    cursor: pointer;
   }
   .menuContainer {
     margin-top: 100px;

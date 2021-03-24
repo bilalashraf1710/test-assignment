@@ -10,13 +10,13 @@ function ServiceListItem({ item }) {
       <div style={{ width: "40%", marginLeft: 20 }}>
         {" "}
         <h1 className={classes["title"]}>{item.title} </h1>
-        <p className-={classes["description"]} style={{ color: "#7d7d7d" }}>
+        <p className={classes["description"]} style={{ color: "#7d7d7d" }}>
           {item.description}{" "}
         </p>
       </div>
       <div className={classes["promoCodeDiv"]} style={{ width: "30%" }}>
         <p
-          className-={classes["promoCodeText"]}
+          className={classes["promoCodeText"]}
           style={{ color: "#7d7d7d", fontSize: 12 }}
         >
           PROMOCODE
