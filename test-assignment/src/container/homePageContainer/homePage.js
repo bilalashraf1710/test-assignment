@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import classes from "./mainPage.module.scss";
-import Sidebar from "../components/sidebar/sidebar";
-import Header from "../components/header/header";
+import classes from "./homePage.module.scss";
+import Sidebar from "../../components/sidebar/sidebar";
+import Header from "../../components/header/header";
 import axios from "axios";
-import ServiceList from "../components/serviceList/ServicesList";
-import { MOCKURL } from "../constants";
+import ServiceList from "../../components/serviceList/ServicesList";
+import { MOCKURL } from "../../constants";
 function MainPage() {
   const [servicesData, setServicesData] = useState([]);
 
