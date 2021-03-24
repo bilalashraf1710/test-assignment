@@ -33,7 +33,7 @@ function ServiceList({ data }) {
         </div>
       </div>
       <div className={classes["listContainer"]}>
-        {filter == ""
+        {filter === ""
           ? data.map((item, index) => {
               return (
                 <div key={index}>

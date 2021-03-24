@@ -8,7 +8,6 @@ function ServiceListItem({ item }) {
   return (
     <div className={classes["listItemContainer"]}>
       <div style={{ width: "40%", marginLeft: 20 }}>
-        {" "}
         <h1 className={classes["title"]}>{item.title} </h1>
         <p className={classes["description"]} style={{ color: "#7d7d7d" }}>
           {item.description}{" "}
@@ -47,14 +46,14 @@ function ServiceListItem({ item }) {
             className={classes["buttonRed"]}
             onClick={() => setIsActivated(false)}
           >
-            Activated{" "}
+            Activated
           </div>
         ) : (
           <div
             className={classes["buttonBlue"]}
             onClick={() => setIsActivated(true)}
           >
-            Activate Bonus{" "}
+            Activate Bonus
           </div>
         )}
       </div>

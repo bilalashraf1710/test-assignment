@@ -8,14 +8,12 @@ import { listServices } from "../../services/siteServices.service";
 function MainPage() {
   const [servicesData, setServicesData] = useState([]);
 
-  useEffect(async () => {
-    await getServices();
+  useEffect(() => {
+    getServices();
   }, []);
 
   const getServices = async () => {
     let sites = await listServices();
-    console.log(sites);
-    console.log(sites);
     setServicesData([...sites]);
   };
   return (
