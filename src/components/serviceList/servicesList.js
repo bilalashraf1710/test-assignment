@@ -24,7 +24,7 @@ function ServiceList({ data }) {
 
   const setFilterData = () => {
     const results = servicesList.filter((item) =>
-      item.title.toLowerCase().includes(filter)
+      item.title.toLowerCase().includes(filter.toLowerCase())
     );
     setFilteredData([...results]);
   };
