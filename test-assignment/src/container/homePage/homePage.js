@@ -12,10 +12,12 @@ function MainPage() {
     getServices();
   }, []);
 
+  // returns data from api
   const getServices = async () => {
     let sites = await listServices();
     setServicesData([...sites]);
   };
+
   return (
     <div className={classes["mainPageContainer"]}>
       <div className={classes["sideBar"]}>

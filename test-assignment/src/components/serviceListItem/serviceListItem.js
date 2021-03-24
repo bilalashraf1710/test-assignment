@@ -10,7 +10,7 @@ function ServiceListItem({ item }) {
       <div style={{ width: "40%", marginLeft: 20 }}>
         <h1 className={classes["title"]}>{item.title} </h1>
         <p className={classes["description"]} style={{ color: "#7d7d7d" }}>
-          {item.description}{" "}
+          {item.description}
         </p>
       </div>
       <div className={classes["promoCodeDiv"]} style={{ width: "30%" }}>
@@ -20,7 +20,7 @@ function ServiceListItem({ item }) {
         >
           PROMOCODE
           <span style={{ marginLeft: "47%" }}>
-            {isCopied ? "Copied to clipboard" : ""}{" "}
+            {isCopied ? "Copied to clipboard" : ""}
           </span>
         </p>
         <div className={classes["promoCode"]}>
